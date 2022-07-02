@@ -1,14 +1,7 @@
 ﻿namespace Analytics.Api.Domain;
 
-public class Feed
+public class Feed : BaseEntity
 {
-    public string Link { get; set; }
-    public string Title { get; set; }
-    public string FeedType { get; set; }
-    public string Author { get; set; }
-    public string Content { get; set; }
-    public DateTime PubDate { get; set; }
-
     public Feed()
     {
         Link = "";
@@ -18,4 +11,11 @@ public class Feed
         Content = "";
         PubDate = DateTime.Today;
     }
+
+    public string Link { get; set; }
+    public string Title { get; set; }
+    public string FeedType { get; set; }
+    public string Author { get; set; }
+    public string Content { get; set; }
+    public DateTime PubDate { get; set; }
 }

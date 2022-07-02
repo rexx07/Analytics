@@ -12,8 +12,9 @@ public class ArticleMatrix
     public string? Type { get; set; }
     public string? Category { get; set; }
     public string? Views { get; set; }
-    [Column(TypeName = "decimal(18,4)")]
-    public decimal ViewsCount { get; set; }
+
+    [Column(TypeName = "decimal(18,4)")] public decimal ViewsCount { get; set; }
+
     public int Likes { get; set; }
     public DateTime PubDate { get; set; }
 }
